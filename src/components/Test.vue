@@ -9,7 +9,11 @@
             v-model="selected"
             ><p class="option">{{ question.text }}</p></b-form-checkbox
           >
-          <p class="comment" v-if="question.comment">{{ question.comment }}</p>
+          <div
+            class="comment"
+            v-if="question.comment"
+            v-html="question.comment"
+          ></div>
         </b-list-group-item>
 
         <b-list-group-item v-for="(question, i) in pointsQuestions">
@@ -157,6 +161,7 @@ export default defineComponent({
   font-size: x-large;
   font-weight: bold;
   color: #844084;
+  margin-bottom: 0;
 }
 .comment {
   font-style: italic;
@@ -176,9 +181,13 @@ export default defineComponent({
 }
 
 .form-check-input {
-  width: 1.5em !important;
-  height: 1.5em !important;
-  margin-top: 0.3em !important;
+  width: 1.3em !important;
+  height: 1.3em !important;
+  margin-top: 0.4em !important;
+}
+
+.form-check-label {
+  margin-left: 0.1rem !important;
 }
 
 label {

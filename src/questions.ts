@@ -34,35 +34,50 @@ export const ResultInterpretationMap = {
 export const questions: Question[] = [
   {
     id: '1',
-    text: 'The patient lives in one of the most deprived SIMD quintiles.',
+    text: 'Patient lives in one of the two most deprived SIMD quintiles.',
     value: 2,
-    comment:
-      'SIMD quintiles take a number between 1–5. Quintiles 1–2 = the two most deprived. To calculate SIMD quintile, simply enter the patient’s postcode into column A here – www.bit.ly/3qTxvpC, and look for the result in column F.',
+    comment: `<b-container>
+    <p>
+      SIMD quintiles take a number between 1–5. Quintiles 1–2 = the two most
+      deprived. To calculate SIMD quintile, download the lookup table from <a href="https://www.gov.scot/publications/scottish-index-of-multiple-deprivation-2020v2-postcode-look-up/" target="_blank">here</a> and enter the patient’s postcode into column A. The result will automatically show in column F. For patients in England, enter the
+      postcode
+      <a href="https://www.bit.ly/3Ykqz5o" target="_blank">here</a> to
+      calculate deprivation (although we suggest caution as this tool is
+      validated in Scotland only).
+    </p>
+    <p>*SIMD - Scottish Index of Multiple Deprivation</p>
+  </b-container>
+    `,
     type: QuestionType.Boolean,
     disabled: false,
   },
   {
     id: '2',
-    text: 'The patient has experienced at least one A&E attendance or hospital admission because of a seizure or related to their epilepsy within the last 12 months.',
+    text: 'Has the patient experienced at least one A&E attendance or hospital admission because of a seizure or related to their epilepsy within the last 12 months?',
     value: 3,
     type: QuestionType.Boolean,
     disabled: false,
   },
   {
     id: '3',
-    text: 'The patient has an inherited or congential aetiology/risk factor for their epilepsy.',
+    text: 'Does the patient have an inherited or congential aetiology/risk factor for their epilepsy?',
     value: 2,
     type: QuestionType.Boolean,
     comment:
-      'Includes febrile convulsions, first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic infancy syndrome, birth hypoxia), genetic syndrome, ADHD, ASD, developmental/intellectual delay, premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures.',
+      'Includes febrile convulsions, first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic infancy syndrome, birth hypoxia), genetic syndrome, attention deficit hyperactivity disorder (ADHD), autism spectrum disorder (ASD), developmental/intellectual delay, premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures.',
     disabled: false,
   },
   {
     id: '4',
-    text: `The patient's Charlson Comorbidity Index (CCI) Score is above or equal to 2.`,
+    text: `Patient's Charlson Comorbidity Index score is ≥2.`,
     value: 1,
     type: QuestionType.Boolean,
-    comment: `To calculate their CCI, complete the following online tool: https://www.mdcalc.com/calc/3917/charlson-comorbidity-index-cci`,
+    comment: `<p>
+    To calculate their CCI, complete the following
+    <a href="https://www.mdcalc.com/calc/3917/charlson-comorbidity-index-cci" target="_blank"
+      >online tool</a
+    >.
+  </p>`,
     disabled: false,
   },
 ];

@@ -10,18 +10,15 @@
         <Header />
       </header>
     </b-row>
-    <b-row class="mb-5">
+    <b-row class="mb-0">
       <main><Test :questions="questions" /></main>
     </b-row>
-    <b-row class="mb-5">
+    <b-row class="mb-4">
       <Plan />
     </b-row>
-    <b-row class="mb-5">
-      <p>
-        Abbreviations: SIMD - Scottish Index of Multiple Deprivation; ADHD -
-        Attention deficit hyperactivity disorder; ASD - Autism spectrum disorder
-      </p>
-    </b-row>
+
+    <b-row><hr /></b-row>
+    <b-row><Footer /></b-row>
   </b-container>
 </template>
 
@@ -41,6 +38,7 @@ import Plan from './components/Plan.vue';
 import {questions} from './questions';
 import {defineComponent} from 'vue';
 import {BRow, BContainer} from 'bootstrap-vue-3';
+import Footer from './components/Footer.vue';
 
 export default defineComponent({
   name: 'App',
@@ -48,6 +46,7 @@ export default defineComponent({
     Test,
     Header,
     Plan,
+    Footer,
   },
   data() {
     return {
