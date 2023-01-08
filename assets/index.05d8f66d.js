@@ -2,7 +2,7 @@
     <p>
       A SIMD quintiles take a number between 1\u20135. Quintiles 1\u20132 = the two most
       deprived. To calculate SIMD quintile, simply enter the patient\u2019s
-      postcode into column A <a href="https://www.bit.ly/3qTxvpC">here</a>,
+      postcode into column A <a href="https://www.bit.ly/3qTxvpC" target="_blank>here</a>,
       and look for the result in column F. For patients in England, enter the
       postcode
       <a href="https://www.bit.ly/3Ykqz5o" target="_blank">here</a> to
