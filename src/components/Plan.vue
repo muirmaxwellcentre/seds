@@ -13,28 +13,20 @@ defineProps<{
         specialist team.
       </b-list-group-item>
       <b-list-group-item class="bold">
-        All patients with 2–3 points should have epilepsy clinic follow-up
-        arranged within six months.
+        Patients with 2–3 points should be seen in epilepsy clinic within six
+        months.
       </b-list-group-item>
       <b-list-group-item class="bold">
-        All patients with ≥4 points should have epilepsy clinic follow-up
-        arranged within 3 months and should also be discussed with the on-call
-        neurology registrar.
+        Patients with ≥4 points should be discussed with the on-call epilepsy or
+        neurology registrar/consultant and be seen in epilepsy clinic within 3
+        months.
       </b-list-group-item>
       <b-list-group-item>
-        All other patients should have epilepsy clinic follow-up arranged within
-        12 months.
+        All other patients should be seen in epilepsy clinic within 12 months.
       </b-list-group-item>
       <b-list-group-item>
-        Signpost all patients to safety information provided
-        <a href="https://www.epilepsy.org.uk/living/safety" target="_blank"
-          >here</a
-        >.
-      </b-list-group-item>
-      <b-list-group-item>
-        Provide all patients with a phone number for your local epilepsy nurse
-        specialist team (for example, Edinburgh = 0131 312 0717, Glasgow = 0141
-        232 7601, Western Isles = 01851 763308)
+        Provide all patients with a phone number for the local epilepsy nurse
+        specialist team.
       </b-list-group-item>
     </b-list-group>
   </div>

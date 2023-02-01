@@ -39,12 +39,7 @@ export const questions: Question[] = [
     comment: `<b-container>
     <p>
       SIMD quintiles take a number between 1–5. Quintiles 1–2 = the two most
-      deprived. To calculate SIMD quintile, download the lookup table from <a href="https://www.gov.scot/publications/scottish-index-of-multiple-deprivation-2020v2-postcode-look-up/" target="_blank">here</a> and enter the patient’s postcode into column A. The result will automatically show in column F. For patients in England, enter the
-      postcode
-      <a href="https://www.bit.ly/3Ykqz5o" target="_blank">here</a> to
-      calculate deprivation (although we suggest caution as this tool is
-      validated in Scotland only).
-    </p>
+      deprived. To calculate SIMD quintile, download the lookup table from <a href="https://www.gov.scot/publications/scottish-index-of-multiple-deprivation-2020v2-postcode-look-up/" target="_blank">here</a> and enter the patient’s postcode into column A. The result will automatically show in column F.</p>
     <p>*SIMD - Scottish Index of Multiple Deprivation</p>
   </b-container>
     `,
@@ -76,8 +71,9 @@ export const questions: Question[] = [
     To calculate their CCI, complete the following
     <a href="https://www.mdcalc.com/calc/3917/charlson-comorbidity-index-cci" target="_blank"
       >online tool</a
-    >.
-  </p>`,
+    >. </p> 
+    <p>Note: Do not complete age within CCI as cases and controls in our study were already 1:1 matched by age, precluding the
+    inclusion of age within the model derivation.</p>`,
     disabled: false,
   },
 ];

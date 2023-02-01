@@ -1,10 +1,5 @@
 <template>
   <b-container>
-    <b-row>
-      <div id="headerLogo">
-        <img src="https://iili.io/Hn6nUWF.png" alt="" />
-      </div>
-    </b-row>
     <b-row class="mb-2">
       <header>
         <Header />
