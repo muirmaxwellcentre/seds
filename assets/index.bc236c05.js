@@ -4,7 +4,13 @@
       deprived. To calculate SIMD quintile, download the lookup table from <a href="https://www.gov.scot/publications/scottish-index-of-multiple-deprivation-2020v2-postcode-look-up/" target="_blank">here</a> and enter the patient\u2019s postcode into column A. The result will automatically show in column F.</p>
     <p>*SIMD - Scottish Index of Multiple Deprivation</p>
   </b-container>
-    `,type:"Boolean",disabled:!1},{id:"2",text:"Has the patient experienced at least one A&E attendance or hospital admission because of a seizure or related to their epilepsy within the last 12 months?",value:3,type:"Boolean",disabled:!1},{id:"3",text:"Does the patient have an inherited or congential aetiology/risk factor for their epilepsy?",value:2,type:"Boolean",comment:"Includes febrile convulsions, first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic infancy syndrome, birth hypoxia), genetic syndrome, attention deficit hyperactivity disorder (ADHD), autism spectrum disorder (ASD), developmental/intellectual delay, premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures.",disabled:!1},{id:"4",text:"Patient's Charlson Comorbidity Index score is \u22652.",value:1,type:"Boolean",comment:`<p>
+    `,type:"Boolean",disabled:!1},{id:"2",text:"Has the patient experienced at least one A&E attendance or hospital admission because of a seizure or related to their epilepsy within the last 12 months?",value:3,type:"Boolean",disabled:!1},{id:"3",text:"Does the patient have an inherited/congenital/genetic aetiology or risk factor acquired at <5 years for their epilepsy?",value:2,type:"Boolean",comment:`*Inherited/congenital/genetic aetiologies or risk factors acquired at <5 years of age: febrile convulsions,
+      first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic
+      infancy syndrome, birth hypoxia), genetic syndrome, ADHD, ASD, developmental/intellectual delay,
+      premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures, or the following acquired
+      at &lt;5 years: meningitis/encephalitis, severe head injury, brain tumour, cerebrovascular disease, limbic
+      encephalitis, brain surgery, CNS demyelinating disease, abnormal brain imaging, other hypoxic brain
+      injury, neurodegenerative disease.`,disabled:!1},{id:"4",text:"Patient's Charlson Comorbidity Index score is \u22652.",value:1,type:"Boolean",comment:`<p>
     To calculate their CCI, complete the following
     <a href="https://www.mdcalc.com/calc/3917/charlson-comorbidity-index-cci" target="_blank"
       >online tool</a
