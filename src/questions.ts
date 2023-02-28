@@ -55,11 +55,17 @@ export const questions: Question[] = [
   },
   {
     id: '3',
-    text: 'Does the patient have an inherited or congential aetiology/risk factor for their epilepsy?',
+    text: 'Does the patient have an inherited/congenital/genetic aetiology or risk factor acquired at <5 years for their epilepsy?',
     value: 2,
     type: QuestionType.Boolean,
     comment:
-      'Includes febrile convulsions, first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic infancy syndrome, birth hypoxia), genetic syndrome, attention deficit hyperactivity disorder (ADHD), autism spectrum disorder (ASD), developmental/intellectual delay, premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures.',
+      `*Inherited/congenital/genetic aetiologies or risk factors acquired at <5 years of age: febrile convulsions,
+      first degree relative with epilepsy, congenital abnormality/malformation (e.g. cerebral palsy, metabolic
+      infancy syndrome, birth hypoxia), genetic syndrome, ADHD, ASD, developmental/intellectual delay,
+      premature birth, birth/perinatal difficulties, hydrocephalus, neonatal seizures, or the following acquired
+      at &lt;5 years: meningitis/encephalitis, severe head injury, brain tumour, cerebrovascular disease, limbic
+      encephalitis, brain surgery, CNS demyelinating disease, abnormal brain imaging, other hypoxic brain
+      injury, neurodegenerative disease.`,
     disabled: false,
   },
   {
@@ -77,3 +83,4 @@ export const questions: Question[] = [
     disabled: false,
   },
 ];
+
